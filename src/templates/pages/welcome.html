@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="container hero mt-5 text-center mb-5">
+    <img src="{% static 'img/logo.png' %}" alt="Logo" class="img-fluid" style="object-fit: cover; width: 350px;">
+    
+    <p>"Forge Your Legend"</p>
+
+    <a href="#" class="btn btn-primary bg-dark-cyan hover-grow-md border-0 radius-md me-1 btn-custom">Log In</a>
+    <a href="#" class="btn btn-primary bg-dark-cyan hover-grow-md border-0 radius-md btn-custom">Sign Up</a>
+</div>
+
+<div class="container styled-container text-center">
+    <div class="row mt-4">
+        <div class="col-md-4 mb-2 hover-grow-sm">
+            <div class="card radius-md bg-dark-cyan text-light border-primary mb-4">
+                <div class="card-body">
+                    <i class="bi bi-arrow-repeat display-4 text-info"></i>
+                    <h5 class="card-title text-info fw-bold mt-3">Master Habits</h5>
+                    <p class="card-text">Build daily routines that forge your strength and discipline.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-2 hover-grow-sm">
+            <div class="card radius-md bg-dark-cyan text-light border-primary mb-4">
+                <div class="card-body">
+                    <i class="bi bi-check2-square display-4 text-info"></i>
+                    <h5 class="card-title text-info fw-bold mt-3">Conquer Dailies</h5>
+                    <p class="card-text">Tackle daily tasks with subtasks to claim your victories.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-2 hover-grow-sm">
+            <div class="card radius-md bg-dark-cyan text-light border-primary mb-4">
+                <div class="card-body">
+                    <i class="bi bi-shield display-4 text-info"></i>
+                    <h5 class="card-title text-info fw-bold mt-3">Slay To-Do’s</h5>
+                    <p class="card-text">Defeat one-off challenges and level up your heroism.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center py-5">
+    <div class="mb-4">
+        <h1>How ValorVault Works</h1>
+    </div>
+    <div id="valorVaultCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <i class="bi bi-feather display-4 text-info"></i>
+                <h5 class="mt-3 text-info fw-bold">Forge Your Tasks</h5>
+                <p class="text-light">Craft Habits, Dailies, or To-Do’s to shape your heroic journey.</p>
+            </div>
+            <div class="carousel-item">
+                <i class="bi bi-trophy display-4 text-info"></i>
+                <h5 class="mt-3 text-info fw-bold">Conquer Challenges</h5>
+                <p class="text-light">Complete tasks to earn XP and rise from Peasant to God-Like.</p>
+            </div>
+            <div class="carousel-item">
+                <i class="bi bi-graph-up-arrow display-4 text-info"></i>
+                <h5 class="mt-3 text-info fw-bold">Master Your Stats</h5>
+                <p class="text-light">Boost Strength, Intellect, and Endurance with every victory.</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#valorVaultCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#valorVaultCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+{% endblock content %}
